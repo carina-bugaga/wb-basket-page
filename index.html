@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Товары и точка</title>
-</head>
-<body>
-  <header class="head-block">
-    <div class="logo">
-      <div class="logo__menu">
-        <div class="hamburger-lines">
-          <span class="line1"></span>
-          <span class="line2"></span>
-          <span class="line3"></span>
-        </div> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"/>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Товары и точка</title>
+  </head>
+  <body>
+    <header class="head-block">
+      <div class="wrapper">
+        <div class="logo">
+          <div class="logo__menu">
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+          </div>
+          <div class="logo__text">Товары и точка</div>
+        </div>
+        <div class="search">
+          <input class="search__input" type="text" placeholder="Я ищу..." />
+          <img class="search__mobile" src="images/search-mobile.svg" alt="search"/>
+        </div>
+        <div class="head-menu">
+          <div class="user">
+            <img class="user__icon" src="images/user-icon.svg" alt="user-icon"/>
+            <span class="user__text">Профиль</span>
+          </div>
+          <div class="basket">
+            <img class="basket__icon" src="images/basket-icon.svg" alt="basket-icon" />
+            <span class="user__text">Корзина</span>
+          </div>
+        </div>
       </div>
-      <div class="logo__text">Товары и точка</div>
-    </div>
-    <div class="search">
-      <input class="search__input" type="search" placeholder="Я ищу...">
-      <img src="images/search-mobile.svg" alt="search" class="search__mobile">
-    </div>
-    <div class="head-menu">
-      <div class="user">
-        <img src="images/user-icon.svg" alt="user-icon" class="user__icon">
-        <h6>Профиль</h6>
-      </div>
-      <div class="basket">
-        <img src="images/basket-icon.svg" alt="basket-icon" class="basket__icon">
-        <h6>Корзина</h6>
-      </div>
-    </div>
-  </header> <!--end header-->>
-
-  <script src="js/script.js"></script>
-</body>
+    </header>
+    <!--end header-->
+    <script src="js/script.js"></script>
+  </body>
 </html>
