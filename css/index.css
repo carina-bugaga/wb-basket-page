@@ -1,0 +1,27 @@
+@import url(header.css);
+@import url(content.css);
+@import url(footer.css);
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #9797af;
+  --gray-bg: #f6f6fa;
+  --violet: #6725a8;
+  --violet-head: #8551b9;
+  --violet-head-border: #a37cca;
+  --pink: #cb11ab;
+  --orange: #f55123;
+}
+
+* {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--violet);
+}

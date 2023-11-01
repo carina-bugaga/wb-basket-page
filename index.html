@@ -8,12 +8,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"/>
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Товары и точка</title>
   </head>
   <body>
-    <header class="head-block">
-      <div class="wrapper">
+    <div class="wrapper">
+      <header class="head-block">
         <div class="logo">
           <div class="logo__menu">
             <div class="hamburger-lines">
@@ -34,13 +34,227 @@
             <span class="user__text">Профиль</span>
           </div>
           <div class="basket">
-            <img class="basket__icon" src="images/basket-icon.svg" alt="basket-icon" />
+            <img class="basket__icon" src="images/basket-icon.svg" alt="basket-icon"/>
             <span class="user__text">Корзина</span>
           </div>
         </div>
-      </div>
-    </header>
-    <!--end header-->
+      </header>
+      <!--end header-->
+
+      <section class="basket-block">
+        <div class="basket_left">
+          <span class="basket-title">Корзина</span>
+          <!--Products in stock-->
+          <div class="products-in">
+            <div class="products-subtitle">
+              <label class="label-checkbox">
+                <input class="checkbox" type="checkbox"/>
+                <span class="checkbox__text">Выбрать все</span>
+              </label>
+              <img class="arrow__icon" src="images/arrow-up-icon.svg" alt="arrow up"/>
+            </div>
+            <div class="products-cards">
+              <div class="products-item">
+                <div class="item_left">
+                  <div class="checkbox-img__wrapper">
+                    <label class="label-checkbox">
+                      <input class="checkbox" type="checkbox"/>
+                      <span></span>
+                    </label>
+                    <img class="product-img" src="images/1.png" alt="product" />
+                  </div>
+                  <div class="item__column">
+                    <span class="item-title">Футболка UZcotton мужская</span>
+                    <div class="item-props">
+                      <span class="props-color">Цвет: белый</span>
+                      <span class="props-size">Размер: 56</span>
+                    </div>
+                    <span class="item-seller text_gray">Коледино WB</span>
+                    <div class="item-info text_gray">
+                      <span class="seller-wb">OOO Вайлдберриз</span>
+                      <button class="seller-info">i</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="item-quantity">
+                    <div class="quantity__btn">
+                      <button class="quantity-close disable">&#8211;</button>
+                      <span class="quantity">1</span>
+                      <button class="quantity-add">+</button>
+                    </div>
+                    <span class="quantity__balance">Осталось 2 шт.</span>
+                    <div class="quantity__icons">
+                      <img class="like-icon" src="images/like-icon.svg" alt="like" />
+                      <img src="images/delete-icon.svg" alt="delete" />
+                    </div>
+                  </div>
+                  <div class="item-price">
+                    <span class="price">522 сом</span>
+                    <span class="sale">1051 сом</span>
+                  </div>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="item_left">
+                  <div class="checkbox-img__wrapper">
+                    <label class="label-checkbox">
+                      <input class="checkbox" type="checkbox"/>
+                      <span></span>
+                    </label>
+                    <img class="product-img" src="images/2.png" alt="product" />
+                  </div>
+                  <div class="item__column">
+                    <span class="item-title">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</span>
+                    <div class="item-props">
+                      <span class="props-color">Цвет: прозрачный</span>
+                    </div>
+                    <span class="item-seller text_gray">Коледино WB</span>
+                    <div class="item-info text_gray">
+                      <span class="seller-wb">OOO Мегапрофстиль</span>
+                      <button class="seller-info">i</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="item-quantity">
+                    <div class="quantity__btn">
+                      <button class="quantity-close">&#8211;</button>
+                      <span class="quantity">200</span>
+                      <button class="quantity-add">+</button>
+                    </div>
+                    <div class="quantity__icons">
+                      <img class="like-icon" src="images/like-icon.svg" alt="like" />
+                      <img src="images/delete-icon.svg" alt="delete" />
+                    </div>
+                  </div>
+                  <div class="item-price">
+                    <span class="price price_small">2&nbsp;100&nbsp;047 сом</span>
+                    <span class="sale">2300047 сом</span>
+                  </div>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="item_left">
+                  <div class="checkbox-img__wrapper">
+                    <label class="label-checkbox">
+                      <input class="checkbox" type="checkbox"/>
+                      <span></span>
+                    </label>
+                    <img class="product-img" src="images/3.png" alt="product" />
+                  </div>
+                  <div class="item__column">
+                    <span class="item-title">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные,<br>Faber-Castell </span>
+                    <div class="item-props"></div>
+                    <span class="item-seller text_gray">Коледино WB</span>
+                    <div class="item-info text_gray">
+                      <span class="seller-wb">OOO Вайлдберриз</span>
+                      <button class="seller-info">i</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="item-quantity">
+                    <div class="quantity__btn">
+                      <button class="quantity-close">&#8211;</button>
+                      <span class="quantity">2</span>
+                      <button class="quantity-add disable">+</button>
+                    </div>
+                    <span class="quantity__balance">Осталось 2 шт.</span>
+                    <div class="quantity__icons">
+                      <img class="like-icon" src="images/like-icon.svg" alt="like" />
+                      <img src="images/delete-icon.svg" alt="delete" />
+                    </div>
+                  </div>
+                  <div class="item-price">
+                    <span class="price">494 сом</span>
+                    <span class="sale">950 сом</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Product out of stock-->
+          <div class="products-out">
+            <div class="products-subtitle">
+              <div class="out-subtitle">
+                <span class="out__text">Отсутствуют · </span>
+                <span class="out__number">3</span>
+                <span class="out__text">товара</span>
+              </div>
+              <img class="arrow__icon" src="images/arrow-up-icon.svg" alt="arrow up"/>
+            </div>
+            
+            <div class="products-cards">
+              <div class="products-item">
+                <div class="item_left">
+                  <img class="product-img" src="images/4.png" alt="product" />
+                  <div class="item__column">
+                    <span class="item-title">Футболка UZcotton мужская</span>
+                    <div class="item-props">
+                      <span class="props-color">Цвет: белый</span>
+                      <span class="props-size">Размер: 56</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="item-quantity">
+                    <div class="quantity__icons">
+                      <img class="like-icon" src="images/like-icon.svg" alt="like" />
+                      <img src="images/delete-icon.svg" alt="delete" />
+                    </div>
+                  </div>
+                  <div class="item-price"></div>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="item_left">
+                  <img class="product-img" src="images/5.png" alt="product" />
+                  <div class="item__column">
+                    <span class="item-title">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</span>
+                    <div class="item-props">
+                      <span class="props-color">Цвет: прозрачный</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="item-quantity">
+                    <div class="quantity__icons">
+                      <img class="like-icon" src="images/like-icon.svg" alt="like" />
+                      <img src="images/delete-icon.svg" alt="delete" />
+                    </div>
+                  </div>
+                  <div class="item-price"></div>
+                </div>
+              </div>
+              <div class="products-item">
+                <div class="item_left">
+                  <img class="product-img" src="images/6.png" alt="product" />
+                  <div class="item__column">
+                    <span class="item-title">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell </span>
+                  </div>
+                </div>
+                <div class="item_right">
+                  <div class="item-quantity">
+                    <div class="quantity__icons">
+                      <img class="like-icon" src="images/like-icon.svg" alt="like" />
+                      <img src="images/delete-icon.svg" alt="delete" />
+                    </div>
+                  </div>
+                  <div class="item-price"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end basket_left-->
+
+        <div class="basket_right"></div>
+        <!--end basket_right-->
+      </section>
+      <!--end basket-block-->
+    </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>
