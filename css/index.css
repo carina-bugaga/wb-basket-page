@@ -1,5 +1,6 @@
 @import url(header.css);
-@import url(content.css);
+@import url(basket.css);
+@import url(total-order.css);
 @import url(footer.css);
 
 :root {
@@ -12,6 +13,7 @@
   --violet-head-border: #a37cca;
   --pink: #cb11ab;
   --orange: #f55123;
+  --green: #0cb477;
 }
 
 * {
