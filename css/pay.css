@@ -1,0 +1,12 @@
+/* Pay-block*/
+.pay {
+  padding-top: 20px;
+}
+.pay-card-data {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.card__date {
+  margin-left: 12px;
+}

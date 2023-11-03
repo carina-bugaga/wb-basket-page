@@ -1,5 +1,7 @@
 @import url(header.css);
 @import url(basket.css);
+@import url(delivery.css);
+@import url(pay.css);
 @import url(total-order.css);
 @import url(footer.css);
 
@@ -14,6 +16,8 @@
   --pink: #cb11ab;
   --orange: #f55123;
   --green: #0cb477;
+  --gray-border: #c5c5c8;
+  --gray-underline: #e6e6e6;
 }
 
 * {
@@ -26,4 +30,10 @@
   max-width: 1400px;
   margin: 0 auto;
   background-color: var(--violet);
+}
+.block_white {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 17px 24px 24px 24px;
+  margin-top: 16px;
 }

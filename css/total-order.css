@@ -93,11 +93,14 @@
   display: flex;
 }
 .checkbox_gray::before {
-  background-color: var(--gray);
+  background-color: var(--gray-bg);
+  border: 1px solid var(--gray-border);
   margin-right: 8px;
 }
-.checkbox__text {
-  padding-top: 3px;
+.checkbox_black:checked + span::after {
+  border: solid var(--black);
+  border-width: 0 2px 2px 0;
+  top: 35%;
 }
 .checkbox-note {
   padding-top: 8px;
@@ -116,10 +119,18 @@
 }
 .agreement {
   display: flex;
-  justify-content:flex-start;
-  margin-top: 12px;
+  margin-top: 10px;
 }
-.agreement__img {
-  padding-bottom: 10px;
-  margin-right: 8px;
+.checkbox_transparent {
+  display: flex;
+  align-items: start;
+}
+.checkbox_transparent::before {
+  background-color: var(--white);
+  border: none;
+  margin-right: 3px;
+}
+.text_border-bottom {
+  border-bottom: 1px solid var(--gray-underline);
+  cursor: pointer;
 }

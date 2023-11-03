@@ -23,7 +23,7 @@
 }
 /* Product in stock*/
 .products-in {
-  margin-bottom: 35px;
+  margin-bottom: 42px;
 }
 .products-subtitle {
   display: flex;
@@ -33,7 +33,8 @@
 .checkbox-img__wrapper {
   display: flex;
   align-content: flex-start;
-  flex-wrap: wrap;
+  align-items: center;
+  height: 96px;;
 }
 .checkbox__text {
   font-size: 16px;
@@ -43,8 +44,7 @@
 }
 .label-checkbox {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   position: relative;
   cursor: pointer;
 }
@@ -109,6 +109,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  margin-bottom: 2px;
 }
 .props-color {
   margin-right: 13px;
@@ -218,11 +219,17 @@
   line-height: 16px;
 }
 /* Product out of stock */
-.out-subtitle {
+.products-out {
+  margin-bottom: 38px;
+}
+.text_subtitle {
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.5px;
   margin-bottom: 3px;
+}
+.out__text {
+  margin-bottom: px;
 }
 
 @media ((min-width: 320px) and (max-width: 767px)) {
