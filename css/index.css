@@ -1,9 +1,10 @@
-@import url(header.css);
-@import url(basket.css);
-@import url(delivery.css);
-@import url(pay.css);
-@import url(total-order.css);
-@import url(footer.css);
+@import url(components/header.css);
+@import url(components/basket.css);
+@import url(components/delivery.css);
+@import url(components/pay.css);
+@import url(components/receiver.css);
+@import url(components/total-order.css);
+@import url(components/footer.css);
 
 :root {
   --white: #ffffff;

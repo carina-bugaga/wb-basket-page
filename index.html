@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
-  <link rel="icon" type="image/png" href="favicon.ico" />
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="stylesheet" href="css/index.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png"/>
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+  <link rel="manifest" href="site.webmanifest"/>
+  <link rel="stylesheet" href="css/index.css"/>
   <title>Товары и точка</title>
 </head>
 
@@ -42,7 +41,6 @@
       </div>
     </header>
     <!--end header-->
-
     <main class="basket-block">
       <div class="basket_left">
         <span class="basket-title">Корзина</span>
@@ -324,11 +322,42 @@
           <span class="text_gray ">Спишем оплату с карты при получении</span>
         </section>
         <!--end Pay-->
+        <section class="receiver block_white">
+          <form class="receiver-form" action="">
+            <div class="total__title">
+              <h2 class="total__text">Получатель</h2>
+            </div>
+            <div class="receiver-data_top">
+              <div class="form-item item_top">
+                <input class="form__input" type="text" required>
+                <label class="form__label">Имя</label>
+              </div>
+              <div class="form-item item_top">
+                <input class="form__input" type="text" required>
+                <label class="form__label">Фамилия</label>
+              </div>
+            </div>
+            <div class="receiver-data_bottom">
+              <div class="form-item item_bottom">
+                <input class="form__input" type="text" required>
+                <label class="form__label">Почта</label>
+              </div>
+              <div class="form-item item_bottom">
+                <input class="form__input" type="text" required>
+                <label class="form__label">Телефон</label>
+              </div>
+              <div class="form-item item_bottom">
+                <input class="form__input" type="text" required>
+                <label class="form__label">ИНН</label>
+              </div>
+            </div>
+          </form>
+        </section>
+        <!--end Receiver-->
       </div>
-      <!--end basket_left-->
-
-      <section class="basket_right">
-        <div class="total-order-block">
+      <!--end basket-left-->
+      <div class="basket_right">
+        <section class="total-order-block">
           <div class="total__title">
             <h2 class="total__text">Итого</h2>
             <h2 class="total__number"><span class="total__sum">2&nbsp;101&nbsp;063</span> сом</h2>
@@ -386,15 +415,18 @@
                   <span class="text_border-bottom">правилами пользования торговой площадкой и возврата</span>
                 </span>
               </label>
-
             </div>
           </div>
-        </div>
-        <!--end basket_right-->
-      </section>
-      <!--end basket-block-->
-  </div>
-
+        </section>
+        <!--end Total-order-block-->
+      </div>
+      <!--end basket-right-->
+    </main>
+    <!--end basket-block-->
+    <footer class="footer-block">
+      <span class="footer__text text_gray">© 2022  ООО «Товары и точка»</span>
+    </footer>
+    <!--end footer-block-->
   <script src="js/script.js"></script>
 </body>
 

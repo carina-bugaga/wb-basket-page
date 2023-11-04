@@ -183,7 +183,6 @@
 .quantity__icons {
   display: flex;
   justify-content: end;
-  padding-top: 3px;
   cursor: pointer;
 }
 .icon__wrapper {

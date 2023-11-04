@@ -1,0 +1,10 @@
+/* Footer-block*/
+.footer-block {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer__text {
+  color: var(--white);
+}
