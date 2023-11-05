@@ -10,3 +10,9 @@
 .card__date {
   margin-left: 12px;
 }
+
+@media ((min-width: 320px) and (max-width: 767px)) {
+  .pay-card-data {
+    margin-top: 0;
+  }
+}

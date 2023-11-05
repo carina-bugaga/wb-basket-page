@@ -63,3 +63,45 @@
   display: flex;
   margin-top: 17px;
 }
+
+@media ((min-width: 320px) and (max-width: 767px)) {
+  .total__text {
+    font-size: 20px;
+    line-height: 28px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .delivery-item {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .flex-address {
+    display: flex;
+    line-height: 18px;
+    margin-bottom: 11px;
+  }
+  .flex-free {
+    display: flex;
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+  .delivery-info {
+    margin-bottom: 16px;
+  }
+  .delivery-goods-container {
+    margin: 5px 0 30px 0;
+  }
+  .return__img {
+    margin-left: 6px;
+    margin-top: 3px;
+  }
+  .return__text {
+    margin-left: 2px;
+  }
+  .return-goods__flex {
+    display: flex;
+    margin-top: 25px;
+  }
+}
