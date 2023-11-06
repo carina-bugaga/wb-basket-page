@@ -14,13 +14,18 @@
 
 <body>
   <div class="wrapper">
-    <div class="menu_mobile">
-      <img src="images/home-icon.png" alt="home-icon">
-      <img src="images/catalog-icon.png" alt="catalog-icon">
-      <img src="images/basket-icon.png" alt="basket-icon">
-      <img src="images/like-icon.png" alt="like-icon">
-      <img src="images/profile-icon.png" alt="profile-icon">
-    </div>
+    <nav class="navbar_mobile">
+      <a href="#"><img src="images/home-icon.svg" alt="home-icon"></a>
+      <a href="#"><img src="images/catalog-icon.svg" alt="catalog-icon"></a>
+      <a href="#" class="navbar-basket-count ">
+        <img src="images/basket-icon2.svg" alt="basket-icon">
+        <div class="basket-count">
+          <span class="count">3</span>
+        </div>
+      </a>
+      <a href="#"><img src="images/like-icon2.svg" alt="like-icon"></a>
+      <a href="#"><img src="images/profile-icon.svg" alt="profile-icon"></a>
+    </nav>
     <header class="head-block">
       <div class="logo">
         <div class="logo__menu">
@@ -69,6 +74,9 @@
                       <span></span>
                     </label>
                     <img class="product-img" src="images/1.png" alt="product" />
+                    <div class="count_mobile">
+                      <span class="count_black">56</span>
+                    </div>
                   </div>
                   <div class="item__column">
                     <div class="item-price_mobile">
@@ -213,6 +221,9 @@
                   <img class="product-img" src="images/4.png" alt="product" />
                   <div class="item__column item__wrapper">
                     <span class="item-title">Футболка UZcotton мужская</span>
+                    <div class="count_mobile">
+                      <span class="count_black">56</span>
+                    </div>
                     <div class="item-props">
                       <span class="props-color">Цвет: белый</span>
                       <span class="props-size">Размер: 56</span>
@@ -256,6 +267,9 @@
                   <div class="item__column item__wrapper">
                     <span class="item-title truncate">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
                       шестигранные, Faber-Castell </span>
+                      <div class="count_mobile">
+                        <span class="count_black">56/54/55...</span>
+                      </div>
                   </div>
                 </div>
                 <div class="item_right item__flex">
@@ -408,8 +422,8 @@
               <span class="delivery-date display_mobile">5–8 фев</span>
               <div class="return-goods wrapper_grey wrapper_grey_sm">
                 <img class="return__img" src="images/check-mark.svg" alt="check-mark">
-                <div class="return__text text_small">Обратная доставка товаров на&nbsp;склад при отказе — <span
-                    class="text_green">бесплатно</span></div>
+                <div class="return__text text_small">Обратная доставка товаров на&nbsp;склад при отказе — 
+                  <span class="text_green" title="Если товары вам не подойдут, мы вернем их&nbsp;обратно на склад — это бесплатно">бесплатно</span></div>
               </div>
             </div>
             <div class="pay-block">
@@ -434,7 +448,7 @@
               <label class="label-checkbox checkbox_transparent">
                 <input class="checkbox checkbox_black" type="checkbox" />
                 <span class="checkbox__text text_small checkbox__text_md">Соглашаюсь с
-                  <span class="text_border-bottom">правилами пользования&nbsp;торговой площадкой и&nbsp;возврата</span>
+                  <span class="text_border-bottom">правилами&nbsp;пользования торговой&nbsp;площадкой и&nbsp;возврата</span>
                 </span>
               </label>
             </div>
