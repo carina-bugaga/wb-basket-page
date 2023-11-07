@@ -3,22 +3,26 @@ const formSubmit = document.getElementById('submit-form');
 const inputEmail = document.getElementById('input_email');
 const inputPhone = document.getElementById('input_tel');
 const inputNumber = document.getElementById('input_number');
+const inputName = document.getElementById('input_firstname');
+const inputSurname = document.getElementById('input_surname');
 
 btn.addEventListener('click', function(event) {
   event.preventDefault()
   validation(formSubmit)
+  
+  inputName.addEventListener('focusout', () => validation(formSubmit));
+  inputSurname.addEventListener('focusout', () => validation(formSubmit));
+  inputEmail.addEventListener('focusout', () => validation(formSubmit));
+  inputPhone.addEventListener('focusout', () => validation(formSubmit));
+  inputNumber.addEventListener('focusout', () => validation(formSubmit));
 })
-
-inputEmail.addEventListener('focusout', () => validation(formSubmit));
-inputPhone.addEventListener('focusout', () => validation(formSubmit));
-inputNumber.addEventListener('focusout', () => validation(formSubmit));
 
 // Валидация формы
 function validation(form) {
   const allInputs = form.querySelectorAll('input');
   const EMAIL_REGEXP = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g;
   const PHONE_REGEXP = /^((\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/g;
-  const NUMBER_REGEXP = /^(?!0)\d{14}$/g;
+  const NUMBER_REGEXP = /^[0-9]{14}$/g;
   let result = true;
 
   //Создание элемента с текстом ошибки

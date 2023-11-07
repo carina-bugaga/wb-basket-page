@@ -54,7 +54,7 @@
   font-size: 13px;
   letter-spacing: -0.2px
 }
-/* Error valid for*/
+/* Error valid form*/
 .error .form__input {
   color: var(--orange);
   border-bottom: 2px solid var(--orange);

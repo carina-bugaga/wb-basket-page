@@ -152,7 +152,7 @@
     width: 100%;
   }
 }
-@media ((min-width: 320px) and (max-width: 1043px)) {
+@media ((min-width: 320px) and (max-width: 1024px)) {
   .basket_right {
     background-color: var(--gray-bg);
     padding: 0 16px 16px 16px;
