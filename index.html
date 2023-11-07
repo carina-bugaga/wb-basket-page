@@ -359,31 +359,31 @@
         </section>
         <!--end Pay-->
         <section class="receiver block_white">
-          <form class="receiver-form" action="">
+          <form class="receiver-form" action="" id="submit-form">
             <div class="total__title">
               <h2 class="total__text">Получатель</h2>
             </div>
             <div class="receiver-data_top">
               <div class="form-item item_top">
-                <input class="form__input" type="text" required>
+                <input class="form__input" type="text" required data-firstname="true">
                 <label class="form__label">Имя</label>
               </div>
               <div class="form-item item_top">
-                <input class="form__input" type="text" required>
+                <input class="form__input" type="text" required data-surname="true">
                 <label class="form__label">Фамилия</label>
               </div>
             </div>
             <div class="receiver-data_bottom">
               <div class="form-item item_bottom">
-                <input class="form__input" type="text" required>
+                <input class="form__input" id="input_email" type="text" required data-email="true">
                 <label class="form__label">Почта</label>
               </div>
               <div class="form-item item_bottom">
-                <input class="form__input" type="text" required>
+                <input class="form__input" id="input_tel" type="tel" required data-tel="true">
                 <label class="form__label">Телефон</label>
               </div>
               <div class="form-item item_bottom">
-                <input class="form__input" type="text" required>
+                <input class="form__input" id="input_number" type="text" required data-number="true">
                 <label class="form__label">ИНН</label>
               </div>
             </div>
@@ -443,7 +443,7 @@
                 <p class="checkbox-note text_small">Спишем оплату с карты при получении</p>
               </div>
             </div>
-            <button class="order__btn">Заказать</button>
+            <button class="order__btn" type="submit" id="submit-btn">Заказать</button>
             <div class="agreement">
               <label class="label-checkbox checkbox_transparent">
                 <input class="checkbox checkbox_black" type="checkbox" />
@@ -463,7 +463,7 @@
       <span class="footer__text text_gray">© 2022  ООО «Товары и точка»</span>
     </footer>
     <!--end footer-block-->
-  <script src="js/script.js"></script>
+  <script defer src="js/script.js"></script>
 </body>
 
 </html>

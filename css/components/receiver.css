@@ -21,7 +21,7 @@
 .form-item {
   position: relative;
   width: 100%;
-  border-bottom: 1px solid var(--gray-border);
+
 }
 .item_top {
   max-width: 338px;
@@ -34,6 +34,7 @@
   padding: 5px 0 5px 1px;
   outline: none;
   border: none;
+  border-bottom: 2px solid var(--gray-border);
 }
 .form__label {
   position: absolute;
@@ -53,8 +54,20 @@
   font-size: 13px;
   letter-spacing: -0.2px
 }
+/* Error valid for*/
+.error .form__input {
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
+}
+.error + .form-item {
+  border-bottom: none;
+}
+.error-label {
+  color: var(--orange);
+  font-size: 14px;
+}
 
-@media (max-width: 1024px) {
+@media (min-width: 1025px) {
   .receiver-form {
     width: 590px;
   }
@@ -65,7 +78,7 @@
     max-width: 180px;
   }
 }
-@media ((min-width: 320px) and (max-width: 1023px)) {
+@media ((min-width: 320px) and (max-width: 1024px)) {
   .receiver-data_top,
   .receiver-data_bottom {
     display: flex;

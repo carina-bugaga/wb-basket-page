@@ -239,15 +239,15 @@
   margin-bottom: px;
 }
 
-@media ((min-width: 400px) and (max-width: 1023px)) {
+@media ((min-width: 400px) and (max-width: 1024px)) {
   .item-quantity {
     justify-content: space-between;
   }
 }
-@media ((min-width: 320px) and (max-width: 1023px)) {
+@media ((min-width: 320px) and (max-width: 1024px)) {
   /* Left block*/
   .basket_left {
-    max-width: 767px;
+    max-width: 1023px;
     width: 100%;
     margin-right: 0;
     padding: 0;
@@ -355,7 +355,7 @@
   }
   .quantity__balance {
     padding: 8px 27px 8px 16px;
-    width: 131px;
+    width: 133px;
   }
   .like-icon {
     padding-right: 27px;

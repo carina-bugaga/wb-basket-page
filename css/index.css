@@ -76,13 +76,13 @@
     right: -5px;
   }
   main {
-    max-width: 767px;
+    max-width: 1024px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
   .block_white {
-    max-width: 767px;
+    max-width: 1024px;
     width: 100%;
     padding: 16px 16px 24px 16px;
     margin: 8px 0 10px 0;

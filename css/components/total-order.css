@@ -117,6 +117,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  cursor: pointer;
 }
 .agreement {
   display: flex;
@@ -136,7 +137,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .delivery-address {
     width: 257px;
   }
@@ -145,13 +146,13 @@
   }
 }
 
-@media ((min-width: 400px) and (max-width: 1023px)) {
+@media ((min-width: 400px) and (max-width: 1024px)) {
   .basket_right {
-    max-width: 767px;
+    max-width: 1024px;
     width: 100%;
   }
 }
-@media ((min-width: 320px) and (max-width: 1023px)) {
+@media ((min-width: 320px) and (max-width: 1043px)) {
   .basket_right {
     background-color: var(--gray-bg);
     padding: 0 16px 16px 16px;
