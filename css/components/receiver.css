@@ -35,6 +35,8 @@
   outline: none;
   border: none;
   border-bottom: 2px solid var(--gray-border);
+  font-size: 16px;
+  line-height: 20px;
 }
 .form__label {
   position: absolute;

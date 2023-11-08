@@ -135,6 +135,7 @@
 .item-info {
   display: flex;
   margin-top: 2px;
+  position: relative;
 }
 .seller-info {
   display: flex;
@@ -199,12 +200,24 @@
 .like-icon {
   padding-right: 16px;
 }
+.like-icon, .delete-icon {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.like-icon svg:hover { 
+  stroke: var(--pink); 
+}
+.delete-icon svg:hover { 
+  stroke: var(--orange); 
+}
 .item-price {
   width: 110px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+  position: relative;
 }
 .price {
   font-size: 18px;
@@ -224,6 +237,7 @@
   text-decoration: line-through;
   border-bottom: 1px var(--gray) dashed;
   line-height: 16px;
+  cursor: pointer;
 }
 /* Product out of stock */
 .products-out {

@@ -61,7 +61,7 @@
 .return-goods {
   margin-top: 12px;
   margin-bottom: 23px;
-}
+  }
 .return__img {
   margin-right: 8px;
 }
@@ -71,11 +71,11 @@
 }
 .return__text {
   padding-top: 6px;
-}
+  }
 .text_green {
   color: var(--green);
   border-bottom: 1px var(--green) dashed;
-}
+  }
 .pay-card {
   display: flex;
   margin-bottom: 15px;
