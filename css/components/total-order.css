@@ -137,7 +137,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .delivery-address {
     width: 257px;
   }

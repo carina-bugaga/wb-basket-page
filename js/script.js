@@ -2,6 +2,7 @@ import validation from "./modules/validation.mjs";
 import maskPhone from "./modules/maskPhone.mjs";
 import changeTextBtn from "./modules/changeTextBtn.mjs";
 import { tooltip, tooltipDelete } from "./modules/tooltip.mjs";
+import hiddenSection from "./modules/hiddenSection.mjs";
 
 const btn = document.getElementById('submit-btn')
 const inputEmail = document.getElementById('input_email')
@@ -12,6 +13,7 @@ const inputSurname = document.getElementById('input_surname')
 const checkboxPay = document.getElementById('checkbox_pay')
 const tooltipSeller = document.querySelectorAll('.seller-info')
 const tooltipSale = document.querySelectorAll('.sale')
+const arrowBtns = document.querySelectorAll('.arrow__icon')
 
 btn.addEventListener('click', function(event) {
   event.preventDefault()
@@ -40,3 +42,5 @@ tooltipSale.forEach(elem => {
 tooltipSale.forEach(elem => {
   elem.addEventListener('mouseout', () => tooltipDelete());
 })
+
+arrowBtns.forEach(elem => elem.addEventListener('click', (event) => hiddenSection(event)))
