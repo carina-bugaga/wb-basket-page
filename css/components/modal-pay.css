@@ -1,0 +1,83 @@
+.modal-content-pay {
+  background-color: var(--white);
+  margin: 15% auto;
+  padding: 16px 24px 24px 24px;
+  border-radius: 16px;
+  width: 400px;
+  height: 408px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+}
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.modal-close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card-item {
+  display: flex;
+  padding-bottom: 16px;
+}
+.card-label {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.card-label::before {
+  content: '';
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  margin-top: 3px;
+}
+.card-input:checked + .radio-label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 9px;
+  border: 6px solid var(--pink);
+}
+.card-input {
+  display: none;
+}
+.radio-label {
+  display: flex;
+}
+.card-label img {
+  padding-left: 8px;
+}
+.card-number {
+  padding-left: 4px;
+}
+.btn-select {
+  width: 167px;
+  margin-top: 16px;
+}
+@media ((min-width: 320px) and (max-width: 764px)) {
+  .modal-content-pay {
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 0;
+    max-width: 764px;
+    width: 100%;
+    height: 100vh;
+  }
+  .btn-select {
+    width: 100%;
+  }
+}

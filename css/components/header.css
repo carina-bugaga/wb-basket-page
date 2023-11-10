@@ -97,7 +97,7 @@
   font-weight: 400;
 }
 
-@media ((min-width: 320px) and (max-width: 1024px)) {
+@media ((min-width: 320px) and (max-width: 1023px)) {
   .head-block {
     min-width: 320px;
     height: 56px;

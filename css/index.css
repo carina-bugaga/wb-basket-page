@@ -5,6 +5,8 @@
 @import url(components/receiver.css);
 @import url(components/total-order.css);
 @import url(components/footer.css);
+@import url(components/modal-delivery.css);
+@import url(components/modal-pay.css);
 
 :root {
   --white: #ffffff;
@@ -20,6 +22,7 @@
   --green: #0cb477;
   --gray-border: #c5c5c8;
   --gray-underline: #e6e6e6;
+  --modal-bg: #00000066;
 }
 
 * {
@@ -93,8 +96,19 @@
   transform: rotate(180deg);
   transition: transform 0.8s;
 }
-
-@media ((min-width: 320px) and (max-width: 1024px)) {
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: var(--modal-bg);
+}
+ 
+@media ((min-width: 320px) and (max-width: 1023px)) {
   .wrapper {
     margin-bottom: 56px;
   }
@@ -127,13 +141,13 @@
     right: -5px;
   }
   main {
-    max-width: 1024px;
+    max-width: 1023px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
   .block_white {
-    max-width: 1024px;
+    max-width: 1023px;
     width: 100%;
     padding: 16px 16px 24px 16px;
     margin: 8px 0 10px 0;

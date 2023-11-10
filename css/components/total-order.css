@@ -40,6 +40,9 @@
 .text__h4 {
   margin-bottom: 5px;
 }
+.edit-icon {
+  cursor: pointer;
+}
 .delivery-address {
   font-size: 13px;
   line-height: 16px;
@@ -137,7 +140,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .delivery-address {
     width: 257px;
   }
@@ -146,13 +149,13 @@
   }
 }
 
-@media ((min-width: 400px) and (max-width: 1024px)) {
+@media ((min-width: 400px) and (max-width: 1023px)) {
   .basket_right {
-    max-width: 1024px;
+    max-width: 1023px;
     width: 100%;
   }
 }
-@media ((min-width: 320px) and (max-width: 1024px)) {
+@media ((min-width: 320px) and (max-width: 1023px)) {
   .basket_right {
     background-color: var(--gray-bg);
     padding: 0 16px 16px 16px;

@@ -254,12 +254,12 @@
   margin-bottom: px;
 }
 
-@media ((min-width: 400px) and (max-width: 1024px)) {
+@media ((min-width: 400px) and (max-width: 1023px)) {
   .item-quantity {
     justify-content: space-between;
   }
 }
-@media ((min-width: 320px) and (max-width: 1024px)) {
+@media ((min-width: 320px) and (max-width: 1023px)) {
   /* Left block*/
   .basket_left {
     max-width: 1023px;
