@@ -4,6 +4,7 @@ import changeTextBtn from "./modules/changeTextBtn.mjs";
 import { tooltip, tooltipDelete } from "./modules/tooltip.mjs";
 import hiddenSection from "./modules/hiddenSection.mjs";
 import { openModalDelivery, openModalPay, closeModalDelivery, closeModalPay } from "./modules/modal.mjs";
+import { hiddenBlockPoint, hiddenBlockCoutier } from "./modules/modal.mjs";
 
 const btn = document.getElementById('submit-btn')
 const inputEmail = document.getElementById('input_email')
@@ -17,10 +18,14 @@ const tooltipSale = document.querySelectorAll('.sale')
 const arrowBtns = document.querySelectorAll('.arrow__icon')
 const btnModalDelivery = document.getElementById('btn-modal-delivery')
 const pencilModalDelivery = document.getElementById('pencil-modal-delivery')
+const btnSelectDelivery = document.getElementById('modal-btn-delivery')
+const btnCloseDelivery = document.getElementById('close-delivery')
 const btnModalPay = document.getElementById('btn-modal-pay')
 const pencilModalPay = document.getElementById('pencil-modal-pay')
 const btnSelectPay = document.getElementById('modal-btn-pay')
-const btnClose = document.querySelector('.modal-close')
+const btnClosePay = document.getElementById('close-pay')
+const btnToPoint = document.getElementById('to-point')
+const btnByCourier = document.getElementById('by-courier')
 
 btn.addEventListener('click', function(event) {
   event.preventDefault()
@@ -54,7 +59,13 @@ arrowBtns.forEach(elem => elem.addEventListener('click', (event) => hiddenSectio
 
 btnModalDelivery.addEventListener('click', () => openModalDelivery())
 pencilModalDelivery.addEventListener('click', () => openModalDelivery())
+btnSelectDelivery.addEventListener('click', () => closeModalDelivery())
+btnCloseDelivery.addEventListener('click', () => closeModalDelivery())
+
 btnModalPay.addEventListener('click', () => openModalPay())
 pencilModalPay.addEventListener('click', () => openModalPay())
 btnSelectPay.addEventListener('click', () => closeModalPay())
-btnClose.addEventListener('click', () => closeModalPay())
+btnClosePay.addEventListener('click', () => closeModalPay())
+
+btnToPoint.addEventListener('click', () => hiddenBlockCoutier())
+btnByCourier.addEventListener('click', () => hiddenBlockPoint())

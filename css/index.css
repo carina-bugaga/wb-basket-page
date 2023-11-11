@@ -23,6 +23,8 @@
   --gray-border: #c5c5c8;
   --gray-underline: #e6e6e6;
   --modal-bg: #00000066;
+  --modal-btn: #cb11ab26;
+  --modal-text-sm: #a0a0a4;
 }
 
 * {

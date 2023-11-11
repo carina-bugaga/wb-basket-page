@@ -23,16 +23,16 @@
   background-color: transparent;
   cursor: pointer;
 }
-.card-item {
+.list-item {
   display: flex;
   padding-bottom: 16px;
 }
-.card-label {
+.item-label {
   display: flex;
   position: relative;
   cursor: pointer;
 }
-.card-label::before {
+.item-label::before {
   content: '';
   position: relative;
   width: 15px;
@@ -42,7 +42,7 @@
   border-radius: 8px;
   margin-top: 3px;
 }
-.card-input:checked + .radio-label::after {
+.item-input:checked + .radio-label::after {
   content: '';
   position: absolute;
   top: 3px;
@@ -52,13 +52,13 @@
   border-radius: 9px;
   border: 6px solid var(--pink);
 }
-.card-input {
+.item-input {
   display: none;
 }
 .radio-label {
   display: flex;
 }
-.card-label img {
+.item-label img {
   padding-left: 8px;
 }
 .card-number {
@@ -68,6 +68,7 @@
   width: 167px;
   margin-top: 16px;
 }
+
 @media ((min-width: 320px) and (max-width: 764px)) {
   .modal-content-pay {
     margin: 0 auto;
