@@ -29,7 +29,7 @@ const btnClosePay = document.getElementById('close-pay')
 const btnToPoint = document.getElementById('to-point')
 const btnByCourier = document.getElementById('by-courier')
 const checkboxSelectAll = document.getElementById('checkbox-select-all')
-const likesList = document.querySelectorAll('.like-icon')
+const likesList = document.querySelectorAll('.like-svg')
 
 //Валидация формы
 btn.addEventListener('click', function(event) {
