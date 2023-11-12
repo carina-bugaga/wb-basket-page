@@ -58,7 +58,7 @@
   padding: 10px 16px 14px 16px;
   font-size: 13px;
   line-height: 16px;
-  left: -125px;
+  left: -105px;
   top: 20px;
   opacity: 0;
   transition: 0.5s;
@@ -110,6 +110,11 @@
   background-color: var(--modal-bg);
 }
  
+@media ((min-width: 1023px) and (max-width: 1200px)) {
+  [data-title]::after {
+    left: -195px;
+  }
+}
 @media ((min-width: 320px) and (max-width: 1023px)) {
   .wrapper {
     margin-bottom: 56px;
@@ -153,5 +158,8 @@
     width: 100%;
     padding: 16px 16px 24px 16px;
     margin: 8px 0 10px 0;
+  }
+  [data-title]::after {
+    left: -100px;
   }
 }
