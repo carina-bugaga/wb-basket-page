@@ -6,6 +6,7 @@ import hiddenSection from "./modules/hiddenSection.mjs";
 import { openModalDelivery, openModalPay, closeModalDelivery, closeModalPay } from "./modules/modal.mjs";
 import { hiddenBlockPoint, hiddenBlockCoutier } from "./modules/modal.mjs";
 import selectAllProducts from "./modules/selectAllProducts.mjs";
+import likeProducts from "./modules/likeProducts.mjs";
 
 const btn = document.getElementById('submit-btn')
 const inputEmail = document.getElementById('input_email')
@@ -28,6 +29,7 @@ const btnClosePay = document.getElementById('close-pay')
 const btnToPoint = document.getElementById('to-point')
 const btnByCourier = document.getElementById('by-courier')
 const checkboxSelectAll = document.getElementById('checkbox-select-all')
+const likesList = document.querySelectorAll('.like-icon')
 
 //Валидация формы
 btn.addEventListener('click', function(event) {
@@ -82,3 +84,6 @@ btnClosePay.addEventListener('click', () => closeModalPay())
 
 //Выбор всех продуктов в корзине
 checkboxSelectAll.addEventListener('change', (event) => selectAllProducts(event))
+
+//Добавление товара в избранное
+likesList.forEach(elem => elem.addEventListener('click', (event) => likeProducts(event)))

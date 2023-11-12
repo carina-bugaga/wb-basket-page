@@ -207,7 +207,7 @@
   background-color: transparent;
   border: none;
 }
-.like-icon svg:hover { 
+.like-product, .like-icon svg:hover { 
   stroke: var(--pink); 
 }
 .delete-icon svg:hover { 
@@ -378,7 +378,6 @@
   }
   .quantity__balance {
     padding: 8px 27px 8px 16px;
-    width: 133px;
   }
   .like-icon {
     padding-right: 27px;
