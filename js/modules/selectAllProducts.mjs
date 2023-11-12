@@ -3,4 +3,4 @@ const selectAllProducts = (e) => {
   checkboxList.forEach(el => el.firstElementChild.checked = e.target.checked)
 }
 
-export default selectAll
+export default selectAllProducts
