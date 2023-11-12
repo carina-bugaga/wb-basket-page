@@ -370,6 +370,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .quantity__btn {
     width: 80px;
